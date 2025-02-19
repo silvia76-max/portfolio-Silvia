@@ -1,89 +1,97 @@
+/* Definición de variables de color */
 :root {
-    --color-primary: #b71a1a;
-    --color-text: #820c59;
-    --color-text-light: hsl(0, 0%, 40%);
-    --color-text-deco:#ff0000;
-    --color-background: #b5fcec;
-    --color-boton1: #06eeff;
-    --color-boton1h: rgb(39, 126, 81);
-    --color-boton2: #e42727;
-    --color-boton2h:  #7d0250;
+    --color-primary: #b71a1a; /* Color primario para elementos destacados */
+    --color-text: #820c59; /* Color de texto principal */
+    --color-text-light: hsl(0, 0%, 40%); /* Color de texto secundario más claro */
+    --color-text-deco:#ff0000; /* Color de texto decorativo */
+    --color-background: #b5fcec; /* Color de fondo */
+    --color-boton1: #06eeff; /* Color del primer botón */
+    --color-boton1h: rgb(39, 126, 81); /* Color del primer botón cuando está en hover */
+    --color-boton2: #e42727; /* Color del segundo botón */
+    --color-boton2h:  #7d0250; /* Color del segundo botón cuando está en hover */
 }
 
+/* Reset global: establece márgenes y rellenos a cero y un box-sizing consistente */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Define el alto total de la página */
 html, body {
     height: 100%;
 }
+
+/* Estilo de las "burbujas" o elementos flotantes (elemento con clase .ball) */
 .ball {
     position: absolute;
     border-radius: 100%;
     opacity: 0.7;
-  }
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    color: var(--color-text-deco);
-    line-height: 1.5;
-    background-color: var(--color-background);
 }
 
+/* Estilo principal para el body de la página */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; /* Familia de fuentes */
+    color: var(--color-text-deco); /* Color del texto decorativo */
+    line-height: 1.5; /* Espaciado entre líneas */
+    background-color: var(--color-background); /* Fondo con el color definido en las variables */
+}
+
+/* Estilo del contenedor central con un max-width */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
- Header 
+/* Estilos del header que se mantiene sticky en la parte superior */
 header {
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+    -webkit-backdrop-filter: blur(10px); /* Desenfoque de fondo para Safari */
     padding: 1rem 0;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Estilo cuando el header tiene la clase "scrolled" (después de hacer scroll) */
 header.scrolled {
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo más claro cuando se hace scroll */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más intensa */
 }
 
+/* Estilos del menú de navegación (nav) */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff2626;
-    transform: translateY(-5px);
-    box-shadow: 0 12px 16px rgb(125, 0, 0);
-  
+    background-color: #ff2626; /* Color de fondo del nav */
+    transform: translateY(-5px); /* Desplazamiento hacia arriba */
+    box-shadow: 0 12px 16px rgb(125, 0, 0); /* Sombra del nav */
 }
 
+/* Estilo para el logo dentro del nav */
 .logo {
     font-size: 1.8rem;
     font-weight: 500;
-   
 }
-.logo a {
-    text-decoration: none;
 
+/* Estilo de los enlaces dentro del logo */
+.logo a {
+    text-decoration: none; /* Quitar subrayado */
     &:visited {
-        color: var(--color-boton1);
+        color: var(--color-boton1); /* Color de enlace visitado */
     }
 }
-.logo a:hover{
-    color:white;
-}
+
+/* Estilos para los enlaces dentro de nav */
 .nav-links {
     display: flex;
     gap: 1.50rem;
     list-style: none;
-  
 }
 
 .nav-links a {
@@ -92,18 +100,19 @@ nav {
     position: relative;
     padding: 0.5rem 0;
     font-size: 1.5rem;
-  
 }
 
+/* Estilo para los enlaces activos en la navegación */
 .nav-links a.active {
-    border-bottom: 5px solid var(--color-background);
+    border-bottom: 5px solid var(--color-background); /* Subrayado en enlaces activos */
 }
 
+/* Estilo cuando el enlace de navegación es hover (cuando el ratón está encima) */
 .nav-links a:hover {
-    color:white;
+    color: white;
 }
 
-/* Hero Section */
+/* Estilos de la sección hero */
 #hero {
     text-align: center;
     gap: 4rem;
@@ -112,12 +121,13 @@ nav {
     flex-direction: column-reverse;
 }
 
+/* Estilo de la parte interna de la sección hero */
 .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
-    align-items: center;    
+    align-items: center;
     z-index: 2;
 }
 
@@ -144,6 +154,7 @@ h1 {
     margin-top: 1rem;
 }
 
+/* Estilo para los botones */
 .btn {
     display: inline-block;
     padding: 8px 24px;
@@ -153,32 +164,38 @@ h1 {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
+/* Estilo para el primer tipo de botón */
 .btn-primary {
     background-color: var(--color-boton2);
     color: white;
     border: none;
 }
 
+/* Efecto hover para el primer tipo de botón */
 .btn-primary:hover {
-    background-color:var(--color-background);
+    background-color: var(--color-background);
     color: var(--color-text-deco);
     border: 1.5px solid var(--color-boton2h);
     transform: translateY(-5px);
     box-shadow: 0 12px 16px rgb(125, 0, 0);
 }
 
+/* Estilo para el segundo tipo de botón (outline) */
 .btn-outline {
     background-color: transparent;
     color: var(--color-boton2);
     border: 1.5px solid var(--color-boton2h);
 }
 
+/* Efecto hover para el segundo tipo de botón (outline) */
 .btn-outline:hover {
     background-color: var(--color-text-deco);
     color: var(--color-background);
     transform: translateY(-5px);
     box-shadow: 0 12px 16px rgb(125, 0, 0);
 }
+
+/* Estilo de la imagen en la sección hero */
 .hero-image {
     width: 100%;
 }
@@ -193,6 +210,7 @@ h1 {
     margin: 0 auto;
 }
 
+/* Media queries para responsividad: Ajustes para tabletas */
 @media (min-width: 768px) {
     #hero {
         display: grid;
@@ -220,7 +238,7 @@ h1 {
     }
 }
 
-/* Projects Section */
+/* Estilos de la sección de proyectos */
 #projects {
     padding: 4rem 1rem;
 }
@@ -249,16 +267,18 @@ h1 {
     gap: 2rem;
 }
 
+/* Estilo de las tarjetas de proyectos */
 .project-card {
     display: flex;
     flex-direction: column;
-    background-color:var(--color-background);
+    background-color: var(--color-background);
     border-radius: 12px;
     box-shadow: 0 8px 12px rgba(0.5, 0.5, 0.5, 0.5);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efecto hover para las tarjetas de proyectos */
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 16px rgb(125, 0, 0);
@@ -292,7 +312,7 @@ h1 {
     object-fit: cover;
 }
 
-/* Tablet styles */
+/* Media queries para tabletas */
 @media (min-width: 768px) {
     #projects {
         padding: 5rem 2rem;
@@ -328,7 +348,7 @@ h1 {
     }
 }
 
-/* Desktop styles */
+/* Estilos para pantallas grandes (escritorio) */
 @media (min-width: 1024px) {
     #projects {
         padding: 6rem 2rem;
@@ -351,11 +371,9 @@ h1 {
     .project-image {
         height: 350px;
     }
-
-   
 }
 
-/* Footer */
+/* Estilo del footer */
 footer {
     padding: 4rem 0;
     text-align: center;
@@ -376,10 +394,9 @@ footer {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-  
 }
 
-
+/* Efecto hover para los enlaces de redes sociales */
 .social-links a:hover {
     color: var(--color-text-deco);
     border-radius: 10px;
@@ -388,13 +405,13 @@ footer {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
+/* Estilos para el copyright */
 .copyright {
     color: var(--color-text-deco);
     font-size: 1rem;
 }
 
-/* About */
-/* About Section */
+/* Estilos de la sección "About" (Sobre nosotros) */
 #about {
     display: flex;
     flex-direction: column;
@@ -431,13 +448,13 @@ footer {
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-/* Responsive Design */
+
+/* Responsive */
 @media (min-width: 768px) {
     #hero {
         grid-template-columns: 1fr 1fr;
         text-align: left;
         gap: 2rem;
-        text-decoration: none;
     }
 
     .hero-image img {

@@ -79,6 +79,7 @@ nav {
     font-weight: 500;
 }
 
+
 /* Estilo de los enlaces dentro del logo */
 .logo a {
     text-decoration: none; /* Quitar subrayado */
@@ -209,6 +210,73 @@ h1 {
     box-shadow: 0 24px 28px rgb(125, 0, 0);
     margin: 0 auto;
 }
+/*estilos para el stack tecnologico*/
+#tech-stack h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+}
+
+.flip-card-front {
+    background-color:var(--color-background);
+    color:var(--color-text-deco);
+}
+
+.flip-card-front i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.flip-card-back {
+    background-color:var(--color-background);
+    transform: rotateY(180deg);
+    padding: 10px;
+}
+
+
 
 /* Media queries para responsividad: Ajustes para tabletas */
 @media (min-width: 768px) {

@@ -27,6 +27,7 @@
 🔹 **HTML** → Estructura de la web.  
 🔹 **CSS** → Estilos y diseño adaptable.  
 🔹 **JavaScript** → Interactividad y funcionalidades dinámicas.  
+🔹 agrgado un componente de Vue.js.
 
 ---
 

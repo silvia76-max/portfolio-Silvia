@@ -59,23 +59,34 @@
         </section>
                 <!--  stack digital -->
      <!-- Nueva sección interactiva con Vue para el stack tecnológico -->
-<div id="tech-stack">
-    <h2 id="titulo">Mi Stack Tecnológico</h2>
-    <div class="stack-container">
-        <div v-for="tech in technologies" :key="tech.name" class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <i :class="tech.icon"></i>
-                    <p>{{ tech.name }}</p>
-                </div>
-                <div class="flip-card-back">
-                    <p>{{ tech.description }}</p>
+     <h2>Mi Stack Tecnológico</h2>
+    <div id="app">
+        <div class="stack-container">
+            <div v-for="tech in techStack" :key="tech.name" class="card">
+                <i :class="tech.icon"></i>
+                <p>{{ tech.name }}</p>
+                <div class="progress-bar">
+                    <div class="progress" :style="{ width: tech.level + '%' }"></div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
+        <h2>Herramientas colaborativas</h2>
+        <div class="stack-container">
+            <div v-for="tool in tools" :key="tool.name" class="card">
+                <i :class="tool.icon"></i>
+                <p>{{ tool.name }}</p>
+            </div>
+        </div>
+
+        <h2>Soft Skills & Metodologías</h2>
+        <div class="stack-container">
+            <div v-for="skill in softSkills" :key="skill.name" class="card">
+                <i :class="skill.icon"></i>
+                <p>{{ skill.name }}</p>
+            </div>
+        </div>
+    </div>
 
     </main>
 
@@ -95,24 +106,34 @@
     </footer>
 <!-- Agrega Vue.js -->
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script>
-const { createApp } = Vue;
-createApp({
-    data() {
-        return {
-            technologies: [
-                { name: 'HTML', icon: 'fa-brands fa-html5', description: 'Lenguaje de marcado para estructurar páginas web.' },
-                { name: 'CSS', icon: 'fa-brands fa-css3-alt', description: 'Estilos para diseñar interfaces atractivas.' },
-                { name: 'JavaScript', icon: 'fa-brands fa-js', description: 'Lenguaje de programación para interactividad web.' },
-                { name: 'Vue.js', icon: 'fa-brands fa-vuejs', description: 'Framework progresivo para crear interfaces dinámicas.' },
-                { name: 'Figma', icon: 'fa-brands fa-figma', description: 'Herramienta de diseño colaborativo.' },
-                { name: 'GitHub', icon: 'fa-brands fa-github', description: 'Plataforma para control de versiones y colaboración.' }
-            ]
-        };
-    }
-}).mount('#tech-stack');
-</script>
-
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    techStack: [
+                        { name: 'HTML', icon: 'fa-brands fa-html5', level: 90 },
+                        { name: 'CSS', icon: 'fa-brands fa-css3-alt', level: 90 },
+                        { name: 'JavaScript', icon: 'fa-brands fa-js', level: 80 },
+                        { name: 'Vue.js', icon: 'fa-brands fa-vuejs', level: 75 },
+                        { name: 'GitHub', icon: 'fa-brands fa-github', level: 80 }
+                    ],
+                    tools: [
+                        { name: 'Jira', icon: 'fa-solid fa-tasks' },
+                        { name: 'Trello', icon: 'fa-brands fa-trello' },
+                        { name: 'Canva', icon: 'fa-solid fa-palette' },
+                        { name: 'Figma', icon: 'fa-brands fa-figma' }
+                    ],
+                    softSkills: [
+                        { name: 'Trabajo en equipo', icon: 'fa-solid fa-users' },
+                        { name: 'Autonomía', icon: 'fa-solid fa-user-check' },
+                        { name: 'compromiso', icon: 'fa-solid fa-handshake' },
+                        { name: 'Scrum', icon: 'fa-solid fa-sitemap' }
+                    ]
+                };
+            }
+        }).mount('#app');
+    </script>
 </body>
 
 </html>

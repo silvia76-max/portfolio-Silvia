@@ -87,7 +87,9 @@ nav {
         color: var(--color-boton1); /* Color de enlace visitado */
     }
 }
-
+.logo a:hover{
+    color:white;
+}
 /* Estilos para los enlaces dentro de nav */
 .nav-links {
     display: flex;

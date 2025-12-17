@@ -2,7 +2,7 @@
 
 ¡Bienvenido/a a mi portafolio web! 🚀 Aquí comparto mi trayectoria, habilidades y proyectos en desarrollo web. Mi objetivo es encontrar mi primera oportunidad en el sector y seguir creciendo profesionalmente.  
 
-![Vista previa del portafolio](https://github.com/silvia76-max/portfolio-Silvia/blob/main/images/Captura%20de%20pantalla%202025-02-15%20184708.png)
+![Vista previa del portafolio](https://github.com/silvia76-max/portfolio-Silvia/blob/main/images/portfolio.png)
 
 ---
 
@@ -33,13 +33,14 @@
 
 ## 🚀 **Cómo verlo en vivo**  
 Mi portafolio está disponible en **GitHub Pages**:  
-🔗 [👉 Visita mi portfolio aquí](https://silvia76-max.github.io/portfolio/)  
+🔗 [👉 Visita mi portfolio aquí]( https://silvia76-max.github.io/portfolio-Silvia/)  
 
 ---
 
 ## 📬 **Contacto**  
-📧 **Email:** silvia@example.com  
-🔗 **LinkedIn:** [linkedin.com/in/tuperfil](https://linkedin.com/in/tuperfil)  
-🐙 **GitHub:** [github.com/silvia76-max](https://github.com/silvia76-max)  
+📧 **Email:** silviarodriguezexposito.76@gmail.com  
+🔗 **LinkedIn:** https://www.linkedin.com/in/silvia-rodríguez-expósito 
+🐙 **GitHub:** https://github.com/silvia76-max 
+
 
 ¡Gracias por visitar mi portafolio! 😊🚀  

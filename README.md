@@ -39,7 +39,8 @@ Mi portafolio está disponible en **GitHub Pages**:
 
 ## 📬 **Contacto**  
 📧 **Email:** silviarodriguezexposito.76@gmail.com  
-🔗 **LinkedIn:**https://www.linkedin.com/in/silvia-rodríguez-expósito 
+🔗 **LinkedIn:** https://www.linkedin.com/in/silvia-rodríguez-expósito 
 🐙 **GitHub:** https://github.com/silvia76-max 
+
 
 ¡Gracias por visitar mi portafolio! 😊🚀  

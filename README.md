@@ -33,13 +33,13 @@
 
 ## 🚀 **Cómo verlo en vivo**  
 Mi portafolio está disponible en **GitHub Pages**:  
-🔗 [👉 Visita mi portfolio aquí](https://silvia76-max.github.io/portfolio/)  
+🔗 [👉 Visita mi portfolio aquí]( https://silvia76-max.github.io/portfolio-Silvia/)  
 
 ---
 
 ## 📬 **Contacto**  
 📧 **Email:** silvia@example.com  
-🔗 **LinkedIn:** [linkedin.com/in/tuperfil](https://linkedin.com/in/tuperfil)  
+🔗 **LinkedIn:** [linkedin.com/in/tuperfil]([[https://linkedin.com/in/tuperfil](https://www.linkedin.com/in/silvia-rodríguez-expósito)])  
 🐙 **GitHub:** [github.com/silvia76-max](https://github.com/silvia76-max)  
 
 ¡Gracias por visitar mi portafolio! 😊🚀  

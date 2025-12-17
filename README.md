@@ -2,7 +2,7 @@
 
 ¡Bienvenido/a a mi portafolio web! 🚀 Aquí comparto mi trayectoria, habilidades y proyectos en desarrollo web. Mi objetivo es encontrar mi primera oportunidad en el sector y seguir creciendo profesionalmente.  
 
-![Vista previa del portafolio](https://github.com/silvia76-max/portfolio-Silvia/blob/main/imagenes/portfolio.png)
+![Vista previa del portafolio](https://github.com/silvia76-max/portfolio-Silvia/blob/main/images/portfolio.png)
 
 ---
 

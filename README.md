@@ -38,8 +38,8 @@ Mi portafolio está disponible en **GitHub Pages**:
 ---
 
 ## 📬 **Contacto**  
-📧 **Email:** silvia@example.com  
-🔗 **LinkedIn:** [linkedin.com/in/tuperfil]([[https://linkedin.com/in/tuperfil](https://www.linkedin.com/in/silvia-rodríguez-expósito)])  
-🐙 **GitHub:** [github.com/silvia76-max](https://github.com/silvia76-max)  
+📧 **Email:** silviarodriguezexposito.76@gmail.com  
+🔗 **LinkedIn:** https://linkedin.com/in/tuperfil](https://www.linkedin.com/in/silvia-rodríguez-expósito 
+🐙 **GitHub:** https://github.com/silvia76-max 
 
 ¡Gracias por visitar mi portafolio! 😊🚀  
